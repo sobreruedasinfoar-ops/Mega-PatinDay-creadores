@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campaña creadores · Mega Patín Day 2026</title>
+<meta name="description" content="Brief para creadores de Roadshow en el Mega Patín Day 25 años: qué producir, qué incluir, cómo hacerlo bien y cómo entregar.">
+<style>
+:root{
+  /* Roadshow / Universo Sobre Ruedas: carbón #161614 y naranja del logo #F4981C. Mega: aqua. */
+  --aqua:#23B5D3; --aqua-soft:#E4F6FA; --night:#161614;
+  --brand:#F4981C; --brand-text:#A85A00; --brand-soft:#FFF1DC;
+  --bg:#FFFFFF; --bg-alt:#F6F5F3; --text:#161614; --muted:#5C5B57; --line:#E2E0DC;
+  --ok:#1E8E5A; --no:#C0392B; --no-soft:#FBEDEB;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#121211; --bg-alt:#1C1C1A; --text:#F1F0EC; --muted:#A8A8A2; --line:#2E2E2B; --aqua-soft:#12323B; --no-soft:#2E1B19; --brand:#F4981C; --brand-text:#F4981C; --brand-soft:#33250F; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--brand-text)}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;z-index:5;background:var(--night);color:#fff}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;padding:0 16px;scrollbar-width:none}
+nav a{color:#CFE9F0;text-decoration:none;font-size:14px;padding:14px 10px;white-space:nowrap}
+nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+header.hero{background:var(--night);color:#fff;padding:48px 0 56px}
+.hero .by{font-size:14px;color:#9FD8E6;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
+.hero h1{font-size:clamp(40px,9vw,72px);line-height:1;margin:0;letter-spacing:-.02em}
+.hero h1 span{color:var(--aqua)}
+.hero .sub{font-size:clamp(18px,3vw,24px);margin:12px 0 0;color:#EAF6FA}
+.hero .logo{height:44px;width:auto;display:block;margin:0 0 20px}
+.hero .org{margin:28px 0 0;font-size:15px;color:#BFD4DC}
+.hero .org b{color:#fff}
+section{padding:44px 0 8px}
+h2{font-size:28px;line-height:1.2;margin:0 0 16px}
+h2 small{display:block;font-size:13px;font-weight:700;color:var(--brand-text);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+p{margin:0 0 14px}
+.note{background:var(--aqua-soft);border-left:4px solid var(--aqua);padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0}
+.tablewrap{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{text-align:left;padding:10px 14px;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--bg-alt);font-weight:600;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;white-space:nowrap}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--bg-alt)}
+.card .n{font-size:13px;font-weight:700;color:var(--brand-text);letter-spacing:.06em;text-transform:uppercase}
+.card h3{margin:4px 0 6px;font-size:19px}
+.card p{font-size:15px;color:var(--muted);margin:0 0 8px}
+.card .when{font-size:14px;color:var(--text);font-weight:600}
+.card em{font-size:14px;color:var(--muted)}
+ul.check{list-style:none;padding:0;margin:16px 0}
+ul.check li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.check input{width:20px;height:20px;margin-top:3px;accent-color:var(--brand);flex:none}
+ul.check label{cursor:pointer}
+ul.nope{list-style:none;padding:0;margin:16px 0}
+ul.nope li{padding:10px 14px 10px 42px;margin-bottom:8px;background:var(--no-soft);border-radius:8px;position:relative}
+ul.nope li::before{content:"✕";position:absolute;left:14px;color:var(--no);font-weight:700}
+ul.tips{padding-left:20px}
+ul.tips li{margin-bottom:8px}
+.accounts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.chip{background:var(--brand-soft);color:var(--text);border:1px solid var(--brand);border-radius:999px;padding:4px 12px;font-size:15px;font-weight:600}
+.cta{display:inline-block;background:var(--brand);color:#161614;font-weight:700;text-decoration:none;padding:12px 20px;border-radius:10px;margin:4px 0 12px}
+.cta:hover{filter:brightness(1.08)}
+details{border:1px solid var(--line);border-radius:10px;padding:0 16px;margin-bottom:10px;background:var(--bg-alt)}
+summary{cursor:pointer;font-weight:600;padding:14px 0}
+details p{color:var(--muted)}
+footer{margin-top:56px;padding:28px 0 40px;background:var(--night);color:#BFD4DC;font-size:14px}
+footer b{color:#fff}
+footer a{color:#F4B05A}
+:focus-visible{outline:3px solid var(--aqua);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<nav aria-label="Secciones">
+  <div class="wrap">
+    <a href="#campana">La campaña</a>
+    <a href="#datos">Datos clave</a>
+    <a href="#producir">Qué producir</a>
+    <a href="#checklist">Checklist</a>
+    <a href="#bien">Cómo hacerlo bien</a>
+    <a href="#no">Qué evitar</a>
+    <a href="#formatos">Formatos</a>
+    <a href="#entrega">Entrega</a>
+    <a href="#dudas">Dudas</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="logo" src="data:image/png;base64,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" alt="Roadshow">
+    <p class="by">Brief para creadores</p>
+    <h1>Mega Patín Day <span>25 años</span></h1>
+    <p class="sub">Sábado 21 de noviembre de 2026 · Rosedal de Palermo, Buenos Aires</p>
+    <p class="org">Organiza <b>PatinEnLinea</b> · Sponsor oficial <b>Roadshow</b> · Cuenta de Roadshow Argentina <b>Universo Sobre Ruedas</b></p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="campana">
+  <h2><small>Resumen</small>La campaña en 30 segundos</h2>
+  <p>Cada creador del equipo Roadshow produce <b>4 reels</b> sobre el Mega Patín Day 25 años: 1 antes del evento, 2 el día del evento y 1 después.</p>
+  <p>El Mega lo organiza <b>PatinEnLinea</b>. <b>Roadshow</b> es el sponsor oficial de este año y <b>Universo Sobre Ruedas</b> es la nueva cuenta de Roadshow que maneja Argentina. El objetivo es que toda la comunidad rollera se entere, vea los rollers en acción y quiera probarlos.</p>
+  <div class="note">Este contenido ya está incluido en tu acuerdo con Roadshow: no tiene un pago aparte.</div>
+</section>
+
+<section id="datos">
+  <h2><small>Lo importante</small>Datos clave</h2>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Dato</th><th>Detalle</th></tr></thead>
+    <tbody>
+      <tr><td>Evento</td><td>Mega Patín Day 25 años, salida urbana. No es una carrera, es un paseo para disfrutar en familia.</td></tr>
+      <tr><td>Fecha y hora</td><td>Sábado 21 de noviembre de 2026, 15 hs (unas 4 horas entre la previa y la salida).</td></tr>
+      <tr><td>Lugar</td><td>Rosedal de Palermo, Buenos Aires.</td></tr>
+      <tr><td>Recorrido</td><td>Salida Patín Day de 15K por Av. Santa Fe, Av. Corrientes, el Obelisco, el Colón y Av. del Libertador. También hay una salida de 5K.</td></tr>
+      <tr><td>Público</td><td>3.000 a 4.000 patinadores de Argentina, Uruguay, Paraguay, Chile y Brasil.</td></tr>
+      <tr><td>Organiza</td><td>PatinEnLinea, con 25 años de trayectoria (desde 2001).</td></tr>
+      <tr><td>En el evento</td><td>DJ y sonido, mega sorteos, colecta solidaria con el Ejército de Salvación y coordinadores en todo el recorrido.</td></tr>
+      <tr><td>Rol de Roadshow</td><td>Sponsor oficial: stand de prueba y venta, sorteos y staff con remera.</td></tr>
+      <tr><td>Video de referencia</td><td><a href="https://www.instagram.com/reel/DRYHSlYDZ7T/?stkn=dmJwaWE4ejZ0NWp3" target="_blank" rel="noopener">Reel del Mega anterior</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>El protagonista es el Mega y su comunidad. Roadshow acompaña como sponsor, nunca por encima del evento ni de PatinEnLinea.</p>
+</section>
+
+<section id="producir">
+  <h2><small>Tu parte</small>Qué tenés que producir</h2>
+  <p><b>4 reels</b> en Instagram (y TikTok si lo usás), publicados en colaboración con las tres cuentas.</p>
+  <div class="cards">
+    <article class="card"><div class="n">Reel 1</div><h3>Previa</h3><p>Invitar a ir y contar que Roadshow es sponsor.</p><div class="when">Semana del 16 al 20 de noviembre</div><em>“Me preparo para el Mega”: armo la mochila y muestro mis Roadshow.</em></article>
+    <article class="card"><div class="n">Reel 2</div><h3>En vivo</h3><p>Mostrar la llegada, el Rosedal y el stand.</p><div class="when">Sábado 21, en la previa</div><em>Recorrido por el stand de Roadshow y la gente probando rollers.</em></article>
+    <article class="card"><div class="n">Reel 3</div><h3>En la salida</h3><p>Transmitir la magnitud y la energía.</p><div class="when">Sábado 21 o hasta 24 h después</div><em>POV patinando entre miles de rolleros.</em></article>
+    <article class="card"><div class="n">Reel 4</div><h3>Recap</h3><p>Cerrar la historia y dejar ganas del próximo.</p><div class="when">Hasta el martes 24</div><em>“El Mega en 30 segundos” con los mejores momentos.</em></article>
+  </div>
+  <p>Además, sumá <b>stories</b> durante todo el día del evento etiquetando a las tres cuentas.</p>
+</section>
+
+<section id="checklist">
+  <h2><small>Obligatorio</small>Lo que sí o sí tiene que estar</h2>
+  <p>Repasá esta lista antes de publicar cada reel. Podés ir tildando los puntos.</p>
+  <div class="accounts" aria-label="Cuentas a etiquetar">
+    <span class="chip">@roadshowbrand</span>
+    <span class="chip">@universosobreruedas</span>
+    <span class="chip">@patinenlinea</span>
+  </div>
+  <ul class="check">
+    <li><input type="checkbox" id="c1"><label for="c1">Publicado en colaboración con las tres cuentas: @roadshowbrand, @universosobreruedas y @patinenlinea.</label></li>
+    <li><input type="checkbox" id="c2"><label for="c2">Etiquetadas las tres marcas en el reel y en el texto.</label></li>
+    <li><input type="checkbox" id="c3"><label for="c3">Rollers Roadshow visibles en el video, no solo mencionados.</label></li>
+    <li><input type="checkbox" id="c4"><label for="c4">Mención de que Roadshow es sponsor oficial del Mega Patín Day, organizado por PatinEnLinea (en el video o en el texto).</label></li>
+    <li><input type="checkbox" id="c5"><label for="c5">Etiqueta a la cuenta oficial del Mega (a confirmar).</label></li>
+    <li><input type="checkbox" id="c6"><label for="c6">Hashtags: #MegaPatinDay #Roadshow #RoadshowArgentina</label></li>
+    <li><input type="checkbox" id="c7"><label for="c7">Ubicación: Rosedal de Palermo o Buenos Aires.</label></li>
+    <li><input type="checkbox" id="c8"><label for="c8">Llamado a la acción: “Probá los Roadshow en el stand” (antes y durante) o “Encontralos en @universosobreruedas” (después).</label></li>
+  </ul>
+  <div class="note"><b>Para vos:</b> al colaborar con las tres cuentas y etiquetar a las tres marcas, tu reel se muestra en las tres audiencias. Eso te suma alcance.</div>
+</section>
+
+<section id="bien">
+  <h2><small>Consejos</small>Cómo hacerlo bien</h2>
+  <p>Contalo con tu estilo: la gente te sigue por cómo patinás y cómo hablás, no por una publicidad.</p>
+  <ul class="tips">
+    <li><b>Gancho en los primeros 2 segundos.</b> Arrancá con la imagen más fuerte: la multitud, un truco, tu cara hablando a cámara.</li>
+    <li><b>Formato vertical 9:16</b>, entre 15 y 45 segundos.</li>
+    <li><b>Subtítulos siempre.</b> Mucha gente mira sin sonido.</li>
+    <li><b>Mostrá el producto en uso:</b> patinando, frenando, haciendo un truco. Un primer plano de los rollers por reel alcanza.</li>
+    <li><b>Mostrá la comunidad.</b> Gente de otras provincias y países, grupos, banderas: eso hace grande al Mega.</li>
+    <li><b>Ojo con el sol fuerte de la tarde.</b> Buscá sombra para hablar a cámara y usá el sol para las tomas abiertas.</li>
+    <li><b>Grabá de más el día del evento.</b> Los clips que sobren sirven para el recap.</li>
+  </ul>
+</section>
+
+<section id="no">
+  <h2><small>Cuidado</small>Lo que no puede pasar</h2>
+  <p>Evitá estos puntos para cuidar al evento, a la comunidad y a la marca.</p>
+  <ul class="nope">
+    <li>Mostrar o nombrar otras marcas de rollers en primer plano.</li>
+    <li>Poner a Roadshow o a Universo Sobre Ruedas por encima del Mega o de PatinEnLinea: el Mega es el protagonista.</li>
+    <li>Tapar o cortar el logo de Roadshow en las tomas del producto.</li>
+    <li>Patinar sin protección en tomas de trucos o velocidad.</li>
+    <li>Mostrar menores en primer plano sin permiso de sus padres.</li>
+    <li>Alcohol, malas palabras ofensivas o contenido que dañe la imagen del evento.</li>
+  </ul>
+</section>
+
+<section id="formatos">
+  <h2><small>Ideas</small>Formatos sugeridos</h2>
+  <p>Elegí el que mejor vaya con tu estilo. Entre los creadores conviene variar, así no salen 10 reels iguales.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Formato</th><th>Mejor para</th><th>Idea concreta</th></tr></thead>
+    <tbody>
+      <tr><td>Preparate conmigo</td><td>Previa</td><td>Armo la mochila para el Mega: casco, protecciones, agua y mis Roadshow.</td></tr>
+      <tr><td>Cuenta regresiva</td><td>Previa</td><td>“Faltan 3 días”: un clip por día practicando para la salida.</td></tr>
+      <tr><td>Desafío 5K</td><td>Previa</td><td>Me entreno para la salida de 5K o para los 15K y cuento cómo voy.</td></tr>
+      <tr><td>Tutorial rápido</td><td>Previa</td><td>Cómo frenar en grupo o 3 tips para patinar una salida larga.</td></tr>
+      <tr><td>Vlog del día</td><td>En vivo</td><td>Desde que me levanto hasta que llego al Rosedal.</td></tr>
+      <tr><td>Stand Roadshow</td><td>En vivo</td><td>Gente probando los rollers por primera vez y su reacción.</td></tr>
+      <tr><td>Entrevista al paso</td><td>En vivo</td><td>“¿De dónde venís?”: patinadores de distintas provincias y países.</td></tr>
+      <tr><td>Colecta y sorteos</td><td>En vivo</td><td>Mostrar la colecta solidaria con el Ejército de Salvación y los mega sorteos.</td></tr>
+      <tr><td>POV</td><td>En la salida</td><td>Cámara en mano entre miles de rolleros por la avenida.</td></tr>
+      <tr><td>Recap</td><td>Después</td><td>Los mejores momentos en 30 segundos, con música en tendencia.</td></tr>
+      <tr><td>Antes y después</td><td>Después</td><td>Cómo llegué y cómo terminé: cansado pero feliz.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="entrega">
+  <h2><small>Publicación</small>Cómo entregar</h2>
+  <p>No hace falta que nos muestres el reel antes de subirlo: publicás vos, directamente, cuando estés listo.</p>
+  <p>Eso sí, publicalo en colaboración con <b>@roadshowbrand</b>, <b>@universosobreruedas</b> y <b>@patinenlinea</b>, y etiquetá a las tres marcas. Así llegás a las tres comunidades.</p>
+  <p>Si preferís que lo veamos antes, es opcional: mandalo por WhatsApp con el texto que vas a publicar.</p>
+  <a class="cta" href="https://wa.me/5491178242352" target="_blank" rel="noopener">WhatsApp +54 9 11 7824 2352</a>
+</section>
+
+<section id="dudas">
+  <h2><small>FAQ</small>Dudas rápidas</h2>
+  <details><summary>¿Tengo que usar un modelo específico de Roadshow?</summary><p>No, el que uses habitualmente. Que se vea bien la marca.</p></details>
+  <details><summary>¿A qué cuentas tengo que etiquetar y colaborar?</summary><p>A las tres: @roadshowbrand, @universosobreruedas (la nueva cuenta de Roadshow Argentina) y @patinenlinea. Para el llamado a la acción de después del evento, usá @universosobreruedas.</p></details>
+  <details><summary>¿Puedo publicar en TikTok también?</summary><p>Sí, suma. Instagram es la prioridad.</p></details>
+  <details><summary>¿Puedo hacer más de 4 reels?</summary><p>Sí. Los 4 son el mínimo; los extra también valen.</p></details>
+  <details><summary>¿Qué pasa si no puedo ir al evento?</summary><p>Avisá cuanto antes. Reemplazamos los reels del día por otros de previa o de producto.</p></details>
+  <details><summary>¿Puedo usar música con derechos?</summary><p>Usá audios de la biblioteca de Instagram o TikTok, así el reel no se silencia.</p></details>
+  <details><summary>¿A quién le pregunto?</summary><p>Por WhatsApp al +54 9 11 7824 2352.</p></details>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Mega Patín Day 25 años</b> · Organiza PatinEnLinea · Sponsor oficial Roadshow</p>
+    <p>Contacto: <a href="https://wa.me/5491178242352" target="_blank" rel="noopener">+54 9 11 7824 2352</a> · Sobreruedas.info.ar@gmail.com</p>
+  </div>
+</footer>
+
+</body>
+</html>
